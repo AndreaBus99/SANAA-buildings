@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+
+    <script>
+        let buildings = {{buildings|tojson}};
+        console.log(buildings);
+    </script>
+    <div class="container capsule">
+        <div class="row">
+            <div class="col-md-12 featured_title">
+                Featured today :
+            </div>
+        </div>
+
+        <div class="home"></div>
+    </div>
+
+
+{% endblock %}
+
+
+

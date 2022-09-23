@@ -1,0 +1,273 @@
+body{
+    font-family: 'Comfortaa', bold;
+    height: 100%;
+}
+
+html{ 
+    height:100%;
+}
+
+.bg-color{
+    /* #88cfc5 */
+    background-color:#88cfc5;
+}
+
+.color-title{
+    color: #88cfc5
+}
+
+#search_button{
+    background-color: #88cfc5;
+    border: none;
+}
+
+#add-color{
+    color:rgb(192, 192, 192)
+}
+
+
+/* Homepage */
+.container-fluid{
+    background-color: #EDD4C9;
+    height:100%;
+    overflow: auto;
+}
+
+.style-home{
+    /* background-color: rgb(255, 249, 249); */
+    background-color: rgb(252, 252, 252);
+    border-radius: 25px;
+    padding: 20px;
+    margin:10px;
+}
+
+.title-home{
+    color: #88cfc5;
+    font-size: 20px;
+    font-weight:bold;
+    margin:10px;
+    padding-left:6px;
+}
+
+.year-home{
+    color: rgb(204, 204, 204)  ;
+    font-size: 20px;
+    margin:10px;
+
+}
+
+.featured_title{
+    font-size: 30px;
+    font-weight: bold;
+    padding:10px;
+    margin: auto;
+    color: grey; 
+    width: 60%;
+    text-align: center;
+    
+}
+
+.capsule{
+    background-color: #F2E0D9; 
+    height: 100%;
+    overflow:auto;
+}
+
+.home{
+    cursor:pointer;
+}
+
+/* Search */
+
+mark{
+    background-color: #88cfc5;
+}
+
+.by_title, .by_location, .by_material{
+    background-color: rgb(252, 252, 252);
+    border-radius: 25px;
+    padding: 20px;
+    margin:10px;
+}
+
+.divSearch{
+    cursor: pointer;
+}
+
+.result_by{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.no_title, .no_location, .no_material{
+    padding:10px;
+    color: rgb(204, 204, 204);
+}
+
+.grey{
+    color: rgb(204, 204, 204);
+}
+
+.number_title, .number_location, .number_material{
+    color: rgb(204, 204, 204) ;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.search_result{
+    color: grey;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top:15px;
+    margin-left:15px;
+}
+
+.result_by{
+    color: #88cfc5;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.total_results{
+    padding-left:10px;
+    color: rgb(179, 178, 178) ;
+    margin-left:15px;
+}
+
+/* Add */
+.create{
+    color: grey;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px; 
+    margin-top:15px;
+    margin-left:15px;
+}
+.add-fields{
+    color: #37A494;
+    font-size: px;
+    padding-left:10px;
+}
+#title_input, #image_input, #info_input, #year_input, #location_input, #area_input, #material_input{
+    margin-left:10px;
+}
+
+.form-add{
+    background-color: rgb(252, 252, 252);
+    border-radius: 25px;
+    padding: 20px;
+    margin:10px;
+}
+
+#add_button{
+    background-color: #88cfc5;
+    border: none;
+    margin-left:150px;
+}
+
+#view_item{
+    background-color: whitesmoke;
+    border: none;
+    margin-left:10px;
+}
+
+#submit_button{
+    background-color: #88cfc5;
+    border: none;
+    margin:10px;
+}
+
+#discard_button{
+    background-color: rgb(236, 169, 161);
+    border: none;
+    margin:10px;
+}
+
+.success{
+    color :white;
+    margin:auto;
+    background-color: #88cfc5;
+    border-radius: 25px;
+    padding: 20px;
+    font-size:20px;
+    width:50%;
+    text-align: center;
+
+}
+
+.w_title, .w_image, .w_info, .w_year, .w_location, .w_area, .w_mat{
+    color:salmon;
+    font-size: 14px;
+    padding-left:10px;
+    margin-bottom:25px;
+}
+
+/* editing */
+.noTitle .ui-dialog-titlebar {
+    display:none
+}
+
+#dialog{
+    background-color: #c6e4e0;
+}
+#no{
+    background-color: rgb(236, 169, 161);
+    border: none;
+    margin:10px;
+}
+#yes{
+    background-color: #88cfc5;
+    border: none;
+    margin:10px;
+}
+
+/* Viewing */
+#card{
+    background-color: rgb(252, 252, 252);
+    border-radius: 25px;
+    padding: 20px;
+    margin:10px;
+}
+
+.title{
+    color: #37A494;
+    font-weight: bolder;
+    font-size: 40px;
+    margin:20px;
+}
+.image{
+    padding:10px;
+    margin:10px;
+}
+.year{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom:25px;
+}
+
+.info, .area{
+    color:grey;
+    margin-bottom: 40px;
+}
+
+.light{
+    color: rgb(204, 204, 204);
+    margin-bottom:10px;
+}
+
+.style-button{
+    background-color: #88cfc5;
+    border: 1px solid #37A494;
+    margin:10px;
+}
+
+#location-button{
+    background-color:#c6e4e080;
+    border: none;
+    margin:10px;
+}
+
+
+

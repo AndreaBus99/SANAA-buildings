@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'view.js') }}"></script>
+    
+    <script>
+        let building= {{building|tojson}}
+    </script>
+
+    <div class="container capsule">
+        <div id="card">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title"></div>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-1">
+                    <button id="edit_button" class="btn btn-outline-dark my-2 my-sm-0"> Edit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row year"></div>
+                    <div class="row info"></div>
+                    <div class="row">
+                        <div class="area">
+                            <span class="light">
+                                Area in square feet: 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="light">
+                        Materials: 
+                    </div>
+                    <div class="mat-button"></div>
+                </div>
+                <div class="col-md-6 location">
+                    <div class="light">
+                        Location: 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

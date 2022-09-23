@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script>
+    
+    <script>
+        let title_matching = {{title_matching|tojson}}
+        let location_matching = {{location_matching|tojson}}
+        let material_matching = {{material_matching|tojson}}
+        let query= {{query|tojson}}
+        let buildings = {{buildings|tojson}}
+        console.log(buildings)
+    </script>
+
+    <div class="container capsule">
+        <div class="search_result">
+            Search results for <span class="search_term"></span>
+        </div>
+        <div class="total_results"></div>
+        <div class="by_title">
+            <span class="result_by">
+                By title:
+            </span>
+            <span class="number_title"></span>
+            <span class="no_title"></span>
+        </div>
+
+        <div class="by_location">
+            <span class="result_by">
+                By location:
+            </span>
+            <span class="number_location"></span>
+            <span class="no_location"></span>
+        </div>
+
+        <div class="by_material">
+            <span class="result_by">
+                By materials:
+            </span>
+            <span class="number_material"></span>
+            <span class="no_material"></span>
+        </div>
+
+    </div>
+    
+
+{% endblock %}

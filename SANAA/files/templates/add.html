@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+    
+    <script>
+        let buildings = {{buildings|tojson}}
+        console.log(buildings)
+    </script>
+
+    <div class="container capsule">
+        <div class="row onSuccess">
+            <!-- <div class="success"></div> -->
+        </div>
+        <div class="row create">
+            Create new building :
+        </div>
+        <div class="form-add">
+            <div class="row">
+                <form>
+                    <label class="add-fields" for="title">Title:</label><br>
+                    <textarea rows="1" cols="25" id="title_input"></textarea><br>
+                    <div class="w_title"></div>
+
+                    <label class="add-fields" for="image">Image link:</label><br>
+                    <textarea rows="1" cols="40" id="image_input"></textarea><br>
+                    <div class="w_image"></div>
+
+                    <label class="add-fields" for="info">Description:</label><br>
+                    <textarea rows="10" cols="45" id="info_input"></textarea><br>
+                    <div class="w_info"></div>
+
+                    <label class="add-fields" for="year">Year:</label><br>
+                    <textarea rows="1" cols="10" id="year_input"></textarea><br>
+                    <div class="w_year"></div>
+
+                    <label class="add-fields" for="location">Location:</label><br>
+                    <textarea rows="1" cols="25" id="location_input"></textarea><br>
+                    <div class="w_location"></div>
+
+                    <label class="add-fields" for="area">Area in square feet:</label><br>
+                    <textarea rows="1" cols="10" id="area_input"></textarea><br>
+                    <div class="w_area"></div>
+                    
+                    <label class="add-fields" for="materials">Materials (please separate by comma):</label><br>
+                    <textarea rows="1" cols="40" id="material_input"></textarea><br>
+                    <div class="w_mat"></div>
+
+                </form>
+            </div>
+            <div class="row">
+                <button id="add_button" class="btn btn-outline-dark my-2 my-sm-0" type="submit"> Submit</button>
+            </div>
+        </div>
+
+    </div>
+    
+
+{% endblock %}
